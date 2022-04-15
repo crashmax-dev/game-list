@@ -1,4 +1,4 @@
-import theme from '../theme'
+import theme from '../styles/theme'
 import { ChakraProvider } from '@chakra-ui/react'
 import { SWRConfig } from 'swr'
 import fetcher from '~/libs/fetcher'

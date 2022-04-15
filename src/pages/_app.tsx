@@ -5,7 +5,7 @@ import fetcher from '~/libs/fetcher'
 import type { AppProps } from 'next/app'
 import '../styles/global.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp() {
   return (
     <SWRConfig value={{ fetcher }}>
       <ChakraProvider resetCSS theme={theme}>

@@ -66,8 +66,16 @@ function MyApp() {
         </Center>
         <Center h={'100%'}>
           <SimpleGrid columns={4} spacing={5}>
-            {games.map(({ title }) => (
-              <Button>{title}</Button>
+            {games.map(({ id }) => (
+              <Box>
+                <Image src={games[id].imageUrl} onClick={onOpen} />
+                <Box>
+                  {games[id].title}
+                </Box>
+                <Box >
+                  {games[id].rating}
+                </Box>
+              </Box>
             ))}
           </SimpleGrid>
         </Center>

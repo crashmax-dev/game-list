@@ -1,8 +1,8 @@
 import mongoose, { Schema } from 'mongoose'
 import type { Model } from 'mongoose'
-import type { IUserModel } from './user.document'
+import type { UserData } from './user.document'
 
-const UserSchema = new Schema<IUserModel>(
+const UserSchema = new Schema<UserData>(
   {
     id: {
       type: Number,
@@ -31,7 +31,7 @@ const UserSchema = new Schema<IUserModel>(
   }
 )
 
-let UserModel: Model<IUserModel>
+let UserModel: Model<UserData>
 
 try {
   UserModel = mongoose.model('User')

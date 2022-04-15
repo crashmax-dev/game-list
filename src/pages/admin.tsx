@@ -1,3 +1,4 @@
+import { Flex } from "@chakra-ui/react"
 import { AdminPanel } from "~/components/AdminPanel"
 import { TelegramWidget } from "~/components/TelegramWidget"
 import { withSessionSsr } from "~/libs/iron-session"
@@ -14,7 +15,9 @@ const AdminPage = ({ user }: Props) => {
   }
 
   return (
-    <TelegramWidget />
+    <Flex h="full" align="center" justify="center">
+      <TelegramWidget />
+    </Flex>
   )
 }
 
@@ -29,8 +32,6 @@ export const getServerSideProps = withSessionSsr(
     }
 
     const user = await validateUserId(session)
-    console.log(user)
-
     return {
       props: {
         user

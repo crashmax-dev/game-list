@@ -10,7 +10,7 @@ export const ratings = [
 
 export type Rating = typeof ratings[number]
 
-export interface GameData {
+export interface GameData extends Document {
   appId: number
   title: string
   descriptions: string
@@ -18,5 +18,3 @@ export interface GameData {
   rating: number
   url?: string
 }
-
-export type IUserModel = GameData & Document

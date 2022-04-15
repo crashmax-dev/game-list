@@ -31,7 +31,7 @@ export const TelegramWidget = () => {
     return (
       <button
         disabled={isLoading}
-        className="bg-telegram text-white py-2 px-4 rounded-full"
+        className="telegram-widget"
         onClick={() => {
           setIsLoading(true)
           onLogin({

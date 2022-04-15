@@ -1,5 +1,4 @@
-import mongoose from 'mongoose'
-import { Schema } from 'mongoose'
+import mongoose, { Schema } from 'mongoose'
 import type { Model } from 'mongoose'
 import type { GameData } from './game.document'
 
@@ -33,7 +32,7 @@ let model: Model<GameData>
 
 try {
   model = mongoose.model('Game')
-} catch {
+} catch (_) {
   model = mongoose.model('Game', GameModel)
 }
 

@@ -1,6 +1,6 @@
 import { Document } from 'mongoose'
 
-export interface UserData {
+export interface UserData extends Document {
   id: number
   first_name: string
   last_name?: string
@@ -8,5 +8,3 @@ export interface UserData {
   photo_url?: string
   auth_date: number
 }
-
-export type IUserModel = UserData & Document

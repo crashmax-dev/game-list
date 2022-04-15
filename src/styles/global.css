@@ -1,0 +1,14 @@
+#__next {
+  height: 100vh;
+}
+
+.telegram-widget {
+  color: #fff;
+  background-color: #54a9eb;
+  border-radius: 999px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  user-select: none;
+}
